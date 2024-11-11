@@ -1,0 +1,12 @@
+{
+  "name": "richlab7",
+  "version": "1.0.0",
+  "description": "To-do application in angular",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
