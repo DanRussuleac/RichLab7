@@ -1,0 +1,15 @@
+<h2>Edit Task</h2>
+<form (ngSubmit)="onSubmit()">
+  <label for="title">Title:</label>
+  <input id="title" name="title" [(ngModel)]="task.title" required />
+
+  <label for="description">Description:</label>
+  <textarea id="description" name="description" [(ngModel)]="task.description"></textarea>
+
+  <label>
+    <input type="checkbox" [(ngModel)]="task.completed" name="completed" />
+    Completed
+  </label>
+
+  <button type="submit">Update Task</button>
+</form>

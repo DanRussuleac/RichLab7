@@ -1,0 +1,9 @@
+<h2>To-Do List</h2>
+<a routerLink="/add-task">Add New Task</a>
+<ul>
+  <li *ngFor="let task of tasks">
+    <input type="checkbox" [(ngModel)]="task.completed" />
+    <a [routerLink]="['/task', task.id]">{{ task.title }}</a>
+    <button (click)="deleteTask(task.id)">Delete</button>
+  </li>
+</ul>
